@@ -58,10 +58,10 @@
     });
 
     $(document).on('click', "#hapus", function() {
-        var nip = $(this).attr("judul_buku");
-        console.log(nip);
+        var judul_buku = $(this).attr("judul_buku");
+        console.log(judul_buku);
         var param = new Object();
-        param.nip = nip;
+        param.judul_buku = judul_buku;
         $.post("../backend/hapus.php", JSON.stringify(param), 
           function(resp) {
             var obj = JSON.parse(resp);
@@ -75,8 +75,8 @@
     });
 
     $(document).on('click', '#edit', function() {
-        var nip = $(this).attr('nip');
-        window.location.href = "./ubah.html?nip=" + nip;
+        var judul_buku = $(this).attr('judul_buku');
+        window.location.href = "./ubah.html?judul_buku=" + judul_buku;
     });
 </script>        
     </body>
