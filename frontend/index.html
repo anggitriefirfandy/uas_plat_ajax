@@ -13,8 +13,8 @@
                 <div class="card mt-5">
                     <div class="card-body">
                         <h1 class="text-center">Aplikasi Toko Buku</h1>
-                            <button id="btnTambah" type="button" class="btn btn-info" >Tambah</button> 
-                        <table class="table table-bordered" >
+                            <button id="btnTambah" type="button" class="btn btn-light" >Tambah</button> 
+                        <table class="table table-bordered table-danger" >
                             <thead>
                                 <tr>
                                     <td>Judul Buku</td>
@@ -48,8 +48,8 @@
                         "<td>" + result[i].judul_buku + "</td>" +
                         "<td>" + result[i].penulis + "</td>" +
                         "<td>" + result[i].penerbit + "</td>" +
-                        '<td><button class="rounded-pill" id="hapus" judul_buku="' + result[i].judul_buku + '">Hapus</button>&nbsp;' +
-                        '<button class="rounded-pill" id="edit" judul_buku="' + result[i].judul_buku + '">Ubah</button></td>' +
+                        '<td><button type="button" class="btn btn-primary" id="hapus" judul_buku="' + result[i].judul_buku + '">Hapus</button>&nbsp;' +
+                        '<button type="button" class="btn btn-info" id="edit" judul_buku="' + result[i].judul_buku + '">Ubah</button></td>' +
                         "</tr>";
                 }
                 $("#isi").html(resultTag);
