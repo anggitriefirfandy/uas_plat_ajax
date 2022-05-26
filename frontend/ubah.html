@@ -43,7 +43,7 @@
         var data = new Object();
         data.judul_buku = judul_buku;
 
-        $.post('../backend/get-data-by-nomor.php', 
+        $.post('../backend/get-data-by-judul.php', 
             JSON.stringify(data), 
             function(resp) {
                 var dataDetail = JSON.parse(resp);
